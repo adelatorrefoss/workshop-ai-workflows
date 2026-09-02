@@ -20,7 +20,7 @@ red() {
 
 exercises=(exercise-01-workflow exercise-02-crystallized-workflow exercise-03-executable-feedback exercise-04-autonomous-loop exercise-05-protected-validation exercise-06-github-issue-to-pr exercise-07-ci-feedback-loop exercise-08-dark-factory)
 for exercise in "${exercises[@]}"; do
-  for required in README.md AGENTS.md Makefile prompts; do
+  for required in README.md TASK-FOR-STUDENT.md AGENTS.md Makefile prompts; do
     [[ -e "$root_dir/$exercise/$required" ]] || fail "$exercise is missing $required"
   done
   find "$root_dir/$exercise" -name '*.csproj' -print -quit | grep -q . || fail "$exercise has no .NET project"

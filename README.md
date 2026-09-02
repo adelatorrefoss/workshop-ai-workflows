@@ -10,7 +10,7 @@ The central lesson is that effective autonomy comes from engineering the agent's
 
 ## How to use this repository
 
-Each exercise is self-contained. Enter its directory, read its `README.md`, start Codex, and paste the prompt shown there.
+Each exercise is self-contained. Enter its directory, read its `README.md` for context and `TASK-FOR-STUDENT.md` for the work and completion criteria, then start Codex and paste the prompt shown there.
 
 ```bash
 cd exercise-01-workflow
