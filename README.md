@@ -1,6 +1,10 @@
-# Auto Content — From Workflow to Autonomous Loop
+# Module 7 — Workflows
 
-Seven hands-on Codex exercises that progressively turn a small coding task into a bounded autonomous workflow with executable feedback and GitHub CI.
+This repository contains the practical work for **Module 7 — Workflows** from **Codesai Training: Advanced AI-Assisted Development**.
+
+The module explores how to move from an ad-hoc AI coding interaction to a repeatable, bounded autonomous loop. Across seven hands-on Codex exercises, learners progressively combine repository research, explicit planning, implementation rules, executable feedback, local repair loops, GitHub Issues, pull requests, and CI.
+
+The central lesson is that effective autonomy comes from engineering the agent's operating environment: its workflow, constraints, validation mechanisms, and feedback channels.
 
 ## How to use this repository
 
@@ -34,4 +38,3 @@ make check
 ## Safety
 
 The autonomous prompts limit scope and iteration count. They prohibit weakening tests, lint rules, architecture checks, and coverage thresholds. GitHub exercises stop before merging: a human remains the final reviewer.
-
