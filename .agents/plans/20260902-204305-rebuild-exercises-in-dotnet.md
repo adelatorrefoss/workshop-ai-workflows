@@ -2,7 +2,7 @@
 
 ## Correction
 
-The first implementation chose Python and a product-catalog domain without confirming the course technology. Rebuild every exercise to match the `development-with-AI/ContextManagement` reference application.
+The first implementation did not match the course technology or interest-registration domain. Rebuild every exercise to match the `development-with-AI/ContextManagement` reference application.
 
 ## Reference baseline
 
@@ -24,7 +24,7 @@ The first implementation chose Python and a product-catalog domain without confi
 4. `refactor: rebuild github exercises in dotnet`
    - Replace Exercises 6–7 with issue-to-PR and CI loops for the registration application.
 5. `test: verify dotnet course scaffold`
-   - Replace the Python scaffold verifier with .NET build and expected-state checks.
+   - Provide a .NET-oriented scaffold verifier with build and expected-state checks.
 6. `docs: finalize dotnet teaching guidance`
    - Update instructor and troubleshooting guidance, run all verification, and audit the repository.
 
@@ -34,4 +34,3 @@ The first implementation chose Python and a product-catalog domain without confi
 - Avoid third-party test packages so the lab can build from the installed .NET SDK without extra teaching dependencies.
 - Preserve intentional red states and identify their expected diagnostic precisely.
 - Never weaken validation to simulate success.
-

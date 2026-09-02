@@ -6,7 +6,7 @@ Create this repository as a classroom-ready project containing seven progressive
 
 ## Design decisions
 
-- Use Python's standard library so setup is immediate and offline-friendly.
+- Use .NET 10 and avoid third-party packages so setup is immediate and aligned with the course reference application.
 - Give every exercise its own application, tests, README, `AGENTS.md`, Makefile, and reusable prompts.
 - Keep the domain consistent while snapshotting each autonomy stage into a separate directory.
 - Mark deliberate red states clearly; a root-level scaffold check validates teaching materials without solving student tasks.
@@ -33,4 +33,3 @@ Create this repository as a classroom-ready project containing seven progressive
 - Run green baseline validations where expected.
 - Confirm deliberately failing exercises fail for their documented pedagogical reason.
 - Inspect Git history for one semantic commit per meaningful step.
-
