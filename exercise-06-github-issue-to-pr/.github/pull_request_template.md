@@ -1,15 +1,13 @@
 ## Summary
 
-- What changed?
-- Why does this design fit the repository?
+Describe the registration behavior and design.
 
 ## Validation
 
 - [ ] `make validate`
-- [ ] Acceptance criteria covered by tests
-- [ ] No validation mechanism weakened
+- [ ] Issue acceptance criteria covered
+- [ ] No feedback mechanism weakened
 
 ## Human review
 
-Describe risks or decisions that deserve reviewer attention. This exercise never merges automatically.
-
+Identify risks and decisions. The agent must not merge this PR.

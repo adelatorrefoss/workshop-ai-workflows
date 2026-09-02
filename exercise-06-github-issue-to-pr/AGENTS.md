@@ -1,12 +1,11 @@
 # Issue-to-PR workflow
 
-1. Use `gh issue view <number>` and treat its acceptance criteria as scope.
-2. Inspect repository conventions and write a short plan.
-3. Create a feature branch named `exercise/<issue-number>-short-name`.
-4. Implement focused code and tests without unrelated changes.
-5. Run `make validate`; repair failures without weakening checks.
-6. Review the diff, commit semantically, push the branch, and open a PR linked with `Closes #<number>`.
-7. Report the PR URL and validation results. Never merge the PR; human review is required.
+1. Read the issue with `gh issue view <number>` and use its acceptance criteria as scope.
+2. Inspect the ASP.NET Core registration patterns and write a short plan.
+3. Create `exercise/<issue-number>-short-name`.
+4. Implement focused code and executable validation.
+5. Run `make validate`; never weaken checks.
+6. Review the diff, create a semantic commit, push, and open a PR containing `Closes #<number>`.
+7. Report the PR URL and exact results. Never merge; human review is required.
 
-Do not expose tokens, rewrite shared history, or alter acceptance criteria.
-
+Never expose tokens or rewrite shared history.

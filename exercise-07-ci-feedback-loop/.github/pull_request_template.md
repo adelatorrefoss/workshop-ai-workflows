@@ -1,15 +1,12 @@
 ## Summary
 
-Describe the implementation and any correction prompted by CI.
+Describe the implementation and any correction caused by CI.
 
 ## Evidence
 
-- [ ] Local `make validate` passed
+- [ ] `make validate` passed
 - [ ] GitHub Actions passed
-- [ ] No tests or checks were weakened
-- [ ] Maximum three CI repair iterations respected
+- [ ] No check was weakened
+- [ ] At most three CI runs were used
 
-## Human review
-
-This PR must not be merged by the agent.
-
+The agent must stop before merge.

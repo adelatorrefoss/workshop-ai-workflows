@@ -1,4 +1,3 @@
 # GitHub CI feedback loop
 
-Follow the issue-to-PR workflow, then inspect checks with `gh pr checks --watch`. If CI fails, inspect the failing GitHub Actions log, identify the engineering cause, fix it locally, run relevant validation, commit, and push. Repeat for at most three CI runs. Never delete or skip tests, disable jobs, edit checks only to evade a failure, or lower a threshold. Stop before merge and report every meaningful correction, all check results, and any blocker.
-
+Implement the issue and validate locally, then open a PR and watch `gh pr checks --watch`. On failure, inspect Actions logs, repair the engineering cause locally, commit, and push. Use at most three CI runs. Never delete or skip checks, weaken assertions, or alter workflow commands to evade failure. Stop before merge and report every correction and result.

@@ -1,16 +1,9 @@
 # Exercise 6 — From local loop to GitHub
 
-Turn a GitHub Issue into a branch, validated implementation, semantic commit, and pull request.
+Turn a GitHub Issue for the .NET interest-registration API into a branch, implementation, semantic commit, and pull request.
 
-## One-time setup
+## Setup and starting state
 
-Make this directory the root of a new GitHub repository (copy it outside this course repository if necessary), push the green starter state, and create an issue using `.github/ISSUE_TEMPLATE/product-filter.md`. Install and authenticate GitHub CLI with `gh auth status`.
+Make this folder the root of a new GitHub repository, push its green `make validate` state, and create the supplied issue. Authenticate with `gh auth status`. The starter endpoint currently saves every payload without validation.
 
-## Starting state
-
-`make validate` passes. Category filtering has not been implemented.
-
-## Run
-
-Launch Codex and paste `prompts/issue-to-pr.md`, replacing `<issue-number>`. Codex may create a branch, commit, push, and open a PR, but it must stop before merge for human review.
-
+Launch Codex and paste `prompts/issue-to-pr.md`, replacing `<issue-number>`. Codex may push and open a PR but must stop before merge.
