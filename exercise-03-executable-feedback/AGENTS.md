@@ -1,4 +1,3 @@
 # Executable-feedback workflow
 
-Inspect the code and run `make validate` before editing. Preserve behavior while making the validation suite green. Architectural checks are product constraints, not optional advice. Never edit a check merely to avoid a failure. Add focused tests and report the original failure and the resulting design.
-
+Run `make validate`, preserve registration behavior, and repair the design revealed by executable feedback. Controllers may depend on an application service, never concrete persistence. Never weaken checks. Report the original failure, resulting dependency flow, and exact results.

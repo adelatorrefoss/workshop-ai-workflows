@@ -1,0 +1,1 @@
+namespace InterestApi; public sealed class FileRegistrationRepository { public Task SaveAsync(Registration value) => File.AppendAllTextAsync("interests.txt", $"{value.Name}\t{value.Email}\t{value.Course}\n"); }

@@ -1,13 +1,6 @@
-.PHONY: test lint architecture-test validate
-
-test:
-	python3 -m unittest -v
-
-lint:
-	python3 -m py_compile controller.py preferences_repository.py test_preferences.py
-
+.PHONY: build architecture-test validate
+build:
+	dotnet build InterestApi/InterestApi.csproj --nologo
 architecture-test:
-	python3 check_architecture.py
-
-validate: test lint architecture-test
-
+	@! grep -q 'FileRegistrationRepository' InterestApi/RegistrationController.cs || (echo 'ARCHITECTURE FAILURE: controller depends directly on file persistence; required flow is controller -> application service -> repository interface' && false)
+validate: build architecture-test

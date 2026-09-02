@@ -1,0 +1,1 @@
+var builder = WebApplication.CreateBuilder(args); var app = builder.Build(); app.MapPost("/api/register", (InterestApi.Registration r) => InterestApi.RegistrationValidator.IsValid(r) ? Results.Created("/api/register", new { status="ok" }) : Results.BadRequest()); app.Run(); public partial class Program;

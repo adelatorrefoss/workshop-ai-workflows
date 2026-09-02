@@ -1,10 +1,6 @@
-.PHONY: test lint validate
-
-test:
-	python3 -m unittest -v
-
-lint:
-	python3 -m py_compile pricing.py test_pricing.py
-
-validate: test lint
-
+.PHONY: build contract-test validate
+build:
+	dotnet build Checks/Checks.csproj --nologo
+contract-test:
+	dotnet run --project Checks/Checks.csproj --no-build
+validate: build contract-test

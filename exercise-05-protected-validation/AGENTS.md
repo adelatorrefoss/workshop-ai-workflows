@@ -1,4 +1,3 @@
-# Protected-feedback workflow
+# Protected feedback
 
-Run `make validate` and fix the engineering weakness it identifies. Validation mechanisms are constraints, not obstacles. Never delete or skip tests, disable checks, edit `mutation_check.py`, lower thresholds, or make commands ignore failures unless the user explicitly requests a policy change. Prefer improving production and test design. Use at most three validation attempts and report each correction.
-
+Make `make validate` green by strengthening focused registration tests. Never edit `MutationCheck.cs`, skip checks, lower requirements, or change Make targets to ignore failure. Use at most three attempts and report why each added case protects behavior.
