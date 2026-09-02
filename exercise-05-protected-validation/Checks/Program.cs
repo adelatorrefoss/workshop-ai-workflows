@@ -1,4 +1,12 @@
 using InterestApi;
-if (!RegistrationValidator.IsValid(new Registration("Ada", "ada@example.com", "Advanced"))) return 1;
-if (RegistrationValidator.IsValid(new Registration("", "bad", ""))) return 1;
-Console.WriteLine("examples: green"); return 0;
+using RegistrationChecks;
+
+foreach (var testCase in RegistrationCases.All)
+{
+    if (RegistrationValidator.IsValid(testCase.Value) == testCase.Expected) continue;
+    Console.Error.WriteLine($"CONTRACT FAILURE: {testCase.Name}");
+    return 1;
+}
+
+Console.WriteLine($"registration contract: {RegistrationCases.All.Count} cases green");
+return 0;
