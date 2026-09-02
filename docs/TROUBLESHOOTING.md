@@ -2,10 +2,10 @@
 
 ## Requirements
 
-Local exercises require Python 3.10 or newer and Make. Confirm with:
+Local exercises require the .NET 10 SDK and Make. Confirm with:
 
 ```bash
-python3 --version
+dotnet --version
 make --version
 ```
 
@@ -18,7 +18,11 @@ gh auth status
 
 ## An exercise starts red
 
-This is expected in Exercises 3, 4, and 5. Exercise 7 passes `make validate` but fails the broader `make ci-validate`. Read the exercise README before trying to repair anything.
+This is expected in Exercises 3, 4, and 5. Exercise 7 passes `make validate` but fails the broader `make ci-validate`. The root `make check` verifies these deliberate .NET failures by their diagnostic messages.
+
+## The wrong .NET SDK is selected
+
+Each project targets `net10.0`. Ensure `dotnet --version` reports a 10.x SDK. If your environment pins another version through `global.json`, run the lab in an environment with .NET 10 installed.
 
 ## GitHub does not see the workflow or templates
 
@@ -39,4 +43,3 @@ Run `gh auth status`. Ensure the authenticated account can push branches and ope
 ## Recover a clean exercise
 
 Prefer creating a new branch from the starter commit or making a fresh copy. Avoid weakening validation or modifying the starter branch merely to recover from an experiment.
-
