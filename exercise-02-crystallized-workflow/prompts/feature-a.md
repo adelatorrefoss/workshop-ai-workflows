@@ -1,2 +1,1 @@
-Add `GET /health`. It must return HTTP 200 and `{"status": "ok"}`. Add automated tests.
-
+Add `GET /api/health`, returning HTTP 200 and `{"status":"ok"}`. Add appropriate automated validation.

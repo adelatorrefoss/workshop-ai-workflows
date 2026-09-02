@@ -1,24 +1,15 @@
 # Exercise 1 — Turn an ad-hoc request into a workflow
 
-Compare asking only for code with prescribing how the agent should work.
+This .NET 10 interest-registration application mirrors the Codesai Context Management example. Compare asking only for code with prescribing how Codex should work.
 
 ## Starting state
 
-`make validate` passes. The application serves `GET /users`; it does not expose a health endpoint.
+`make validate` passes. `POST /api/register` saves `Name`, `Email`, and `Course` to `interests.txt`. There is no health endpoint.
 
 ## Part A — Ad-hoc
 
-Start from a clean copy or branch, launch Codex, and paste:
-
-```text
-Add a health check endpoint to this application.
-```
-
-Record files changed, tests added, and validation performed.
+On a clean branch, launch Codex and ask: `Add a health check endpoint to this application.` Record the changes and validation.
 
 ## Part B — Structured
 
-Restore the starting state on a new branch, launch Codex, and paste `prompts/structured.md`. Approve the plan when Codex pauses.
-
-Compare consistency, unnecessary changes, coverage, validation, and human intervention. The endpoint should be `GET /health`, return HTTP 200, and produce `{"status": "ok"}`.
-
+Return to the starter commit on another branch and paste `prompts/structured.md`. Approve the plan when Codex pauses. Compare scope, ASP.NET consistency, tests, validation, and human intervention.

@@ -1,4 +1,3 @@
 # Exercise guidance
 
-Keep changes small and use existing routing conventions. Run `make validate` before reporting completion. Do not change existing endpoint behavior.
-
+Keep changes small and follow the existing ASP.NET Core endpoint and dependency-injection patterns. Run `make validate` before reporting completion. Preserve `POST /api/register` and the registration form.
