@@ -1,29 +1,10 @@
-# Student task — Compare an ad-hoc request with a structured workflow
+# Student challenge — Compare two ways of building the same feature
 
-## Your task
+Add `GET /api/health` to the application. It must return HTTP 200 with `{"status":"ok"}` without changing registration behavior.
 
-Implement the same health endpoint twice from the same starter state and compare how the working process affects the result.
+Produce the feature twice from the same starting point:
 
-The endpoint must respond to `GET /api/health` with HTTP 200 and the JSON body `{"status":"ok"}`. Existing registration behavior must continue to work.
+- once by giving the agent only the feature request;
+- once by requiring research, an explicit plan, your approval, implementation, and validation.
 
-## What to do
-
-1. Run `make validate` and confirm that the starter is green.
-2. Create two branches from the same starter commit: one for the ad-hoc run and one for the structured run.
-3. On the first branch, launch Codex and ask only: `Add a health check endpoint to this application.`
-4. Record the files changed, checks added, commands run, and final validation result.
-5. On the second branch, launch Codex and paste `prompts/structured.md`.
-6. Review the proposed plan when Codex pauses. Approve it only if it is focused and preserves registration behavior.
-7. Record the same evidence for this second run and compare both outcomes.
-
-## Constraints
-
-- Do not give the ad-hoc run extra workflow instructions.
-- Keep both runs independent and based on the same commit.
-- Do not remove or bypass existing behavior or validation.
-
-## Done when
-
-- Both branches provide the required health response.
-- `make validate` passes on both branches.
-- You can explain which differences came from research, planning, testing, and validation rather than from the feature itself.
+Both results must work and be validated. Compare their code, tests, scope, and validation evidence, then decide which one you would merge and justify your choice.
