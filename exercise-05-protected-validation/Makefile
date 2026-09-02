@@ -4,5 +4,5 @@ build:
 test: build
 	dotnet run --project Checks/Checks.csproj --no-build
 mutation-test:
-	dotnet run --project Checks/MutationCheck.csproj
+	dotnet run --project MutationCheck/MutationCheck.csproj
 validate: test mutation-test
