@@ -38,3 +38,8 @@ make check
 ## Safety
 
 The autonomous prompts limit scope and iteration count. They prohibit weakening tests, lint rules, architecture checks, and coverage thresholds. GitHub exercises stop before merging: a human remains the final reviewer.
+
+## Teaching support
+
+- [Instructor guide](docs/INSTRUCTOR_GUIDE.md) explains timing, resets, observations, and debrief questions.
+- [Troubleshooting](docs/TROUBLESHOOTING.md) covers local requirements and GitHub exercise setup.
