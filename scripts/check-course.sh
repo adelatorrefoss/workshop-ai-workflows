@@ -24,6 +24,8 @@ for exercise in "${exercises[@]}"; do
     [[ -e "$root_dir/$exercise/$required" ]] || fail "$exercise is missing $required"
   done
   find "$root_dir/$exercise" -name '*.csproj' -print -quit | grep -q . || fail "$exercise has no .NET project"
+  grep -q '## Learning goal' "$root_dir/$exercise/README.md" || fail "$exercise README lacks a learning goal"
+  grep -q '## Success and reflection' "$root_dir/$exercise/README.md" || fail "$exercise README lacks success and reflection guidance"
 done
 
 grep -q 'Module 7 — Workflows' "$root_dir/README.md" || fail "README lacks module identity"

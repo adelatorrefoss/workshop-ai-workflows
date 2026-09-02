@@ -1,15 +1,23 @@
 # Exercise 1 — Turn an ad-hoc request into a workflow
 
-This .NET 10 interest-registration application mirrors the Codesai Context Management example. Compare asking only for code with prescribing how Codex should work.
+This .NET 10 interest-registration application mirrors the Codesai Context Management example.
 
-## Starting state
+## Learning goal
 
-`make validate` passes. `POST /api/register` saves `Name`, `Email`, and `Course` to `interests.txt`. There is no health endpoint.
+See how explicit research, planning, implementation, and validation phases change an agent's result even when the requested feature is small.
+
+## Before you start
+
+Run `make validate`. Create two branches from the same starter commit so Parts A and B remain comparable. The application currently saves `Name`, `Email`, and `Course` through `POST /api/register`; there is no health endpoint.
 
 ## Part A — Ad-hoc
 
-On a clean branch, launch Codex and ask: `Add a health check endpoint to this application.` Record the changes and validation.
+On the first branch, launch `codex` and ask: `Add a health check endpoint to this application.` Record files changed, checks added, and commands run.
 
 ## Part B — Structured
 
-Return to the starter commit on another branch and paste `prompts/structured.md`. Approve the plan when Codex pauses. Compare scope, ASP.NET consistency, tests, validation, and human intervention.
+On the second branch, launch `codex` and paste `prompts/structured.md`. Approve the plan when Codex pauses.
+
+## Success and reflection
+
+Both solutions should provide `GET /api/health` with HTTP 200 and `{"status":"ok"}` while preserving registration. Which differences came from the workflow rather than the feature?
