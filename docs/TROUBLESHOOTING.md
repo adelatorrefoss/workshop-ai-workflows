@@ -16,6 +16,8 @@ gh --version
 gh auth status
 ```
 
+Exercise 8 requires Git locally but no GitHub account, remote, or `gh` authentication.
+
 ## An exercise starts red
 
 This is expected in Exercises 3, 4, and 5. Exercise 7 passes `make validate` but fails the broader `make ci-validate`. The root `make check` verifies these deliberate .NET failures by their diagnostic messages.
@@ -43,3 +45,11 @@ Run `gh auth status`. Ensure the authenticated account can push branches and ope
 ## Recover a clean exercise
 
 Prefer creating a new branch from the starter commit or making a fresh copy. Avoid weakening validation or modifying the starter branch merely to recover from an experiment.
+
+## The Dark Factory preflight fails
+
+Exercise 8 must be copied into a standalone Git repository. Confirm that its directory is the value of `git rev-parse --show-toplevel`, the current branch is `main`, the working tree is clean, and `dark-factory-start` points to the initial commit. If the factory stopped midway, preserve the run log and feature branch for diagnosis; start from a fresh copy for a new classroom run rather than rewriting the failed evidence.
+
+## The Dark Factory audit reports invalid history
+
+The audit expects only ordered first-parent merge commits after `dark-factory-start`, each with two parents and a subject such as `Merge issue #003: Add course filtering`. A squash, fast-forward, out-of-order issue, direct commit on `main`, nested merge, changed harness file, dirty tree, or missing run-log evidence causes a deliberate failure.

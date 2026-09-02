@@ -1,0 +1,12 @@
+using InterestApi.Repository;
+
+var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddControllers();
+builder.Services.AddSingleton<IRegistrationRepository, FileRegistrationRepository>();
+
+var app = builder.Build();
+app.MapControllers();
+app.Run();
+
+public partial class Program;
+

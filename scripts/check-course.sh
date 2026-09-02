@@ -18,7 +18,7 @@ red() {
   echo "$exercise: expected red (make $command)"
 }
 
-exercises=(exercise-01-workflow exercise-02-crystallized-workflow exercise-03-executable-feedback exercise-04-autonomous-loop exercise-05-protected-validation exercise-06-github-issue-to-pr exercise-07-ci-feedback-loop)
+exercises=(exercise-01-workflow exercise-02-crystallized-workflow exercise-03-executable-feedback exercise-04-autonomous-loop exercise-05-protected-validation exercise-06-github-issue-to-pr exercise-07-ci-feedback-loop exercise-08-dark-factory)
 for exercise in "${exercises[@]}"; do
   for required in README.md AGENTS.md Makefile prompts; do
     [[ -e "$root_dir/$exercise/$required" ]] || fail "$exercise is missing $required"
@@ -42,5 +42,7 @@ red exercise-05-protected-validation mutation-test 'MUTATION FAILURE'
 green exercise-06-github-issue-to-pr validate
 green exercise-07-ci-feedback-loop validate
 red exercise-07-ci-feedback-loop ci-validate 'CI CONTRACT FAILURE'
+green exercise-08-dark-factory validate
+green exercise-08-dark-factory factory-scaffold
 
 echo "course scaffold: all .NET checks passed"
