@@ -2,7 +2,7 @@
 
 ## Learning goal
 
-Allow Codex to consume feedback and correct its work without asking a human to relay each failure, while enforcing a strict stopping boundary.
+Allow Copilot to consume feedback and correct its work without asking a human to relay each failure, while enforcing a strict stopping boundary.
 
 ## Starting state
 
@@ -10,7 +10,7 @@ Run `make validate`. The contract accepts complete registrations for both offere
 
 ## Run
 
-Launch `codex` and paste `prompts/autonomous.md`. Do not coach it between attempts; record how it interprets feedback and whether it respects the three-attempt limit.
+Launch `copilot` and paste `prompts/autonomous.md`. Do not coach it between attempts; record how it interprets feedback and whether it respects the three-attempt limit.
 
 ## Success and reflection
 

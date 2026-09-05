@@ -2,7 +2,7 @@
 
 ## Objective
 
-Create this repository as a classroom-ready project containing seven progressively autonomous Codex exercises based on Module 7.
+Create this repository as a classroom-ready project containing seven progressively autonomous Copilot exercises based on Module 7.
 
 ## Design decisions
 

@@ -14,7 +14,7 @@ Copy this folder to the root of a new repository, initialize and push it as in E
 
 ## Run
 
-Launch `codex` with `prompts/ci-loop.md`, replacing `<issue-number>`. Let it open the PR, watch checks, inspect the failing log, and repair the cause. Do not relay the error manually.
+Launch `copilot` with `prompts/ci-loop.md`, replacing `<issue-number>`. Let it open the PR, watch checks, inspect the failing log, and repair the cause. Do not relay the error manually.
 
 ## Success and reflection
 

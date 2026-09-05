@@ -21,7 +21,7 @@ The green starter endpoint saves every payload without validation.
 
 ## Run
 
-Launch `codex` and paste `prompts/issue-to-pr.md`, replacing `<issue-number>`. Codex may branch, commit, push, and open a PR, but must stop before merge.
+Launch `copilot` and paste `prompts/issue-to-pr.md`, replacing `<issue-number>`. Copilot may branch, commit, push, and open a PR, but must stop before merge.
 
 ## Success and reflection
 

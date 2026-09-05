@@ -12,7 +12,7 @@ Run `make build` and see it pass. Then run `make architecture-test` and see the 
 
 ## Run
 
-Launch `codex` and paste `prompts/implement.md`. Let the failure guide the refactor.
+Launch `copilot` and paste `prompts/implement.md`. Let the failure guide the refactor.
 
 ## Success and reflection
 

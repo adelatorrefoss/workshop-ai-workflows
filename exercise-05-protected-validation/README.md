@@ -10,7 +10,7 @@ Run `make test` and see two broad registration cases pass. Run `make mutation-te
 
 ## Run
 
-Launch `codex` and paste `prompts/strengthen.md`. Shared cases live in `Checks/RegistrationCases.cs`; the mutation runner executes altered validator behaviors against the same cases.
+Launch `copilot` and paste `prompts/strengthen.md`. Shared cases live in `Checks/RegistrationCases.cs`; the mutation runner executes altered validator behaviors against the same cases.
 
 ## Success and reflection
 

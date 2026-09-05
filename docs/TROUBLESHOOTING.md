@@ -30,7 +30,7 @@ Each project targets `net10.0`. Ensure `dotnet --version` reports a 10.x SDK. If
 
 The exercise directory must be the root of its own GitHub repository. If it remains a subdirectory of this course repository, GitHub will not treat its nested `.github` directory as repository configuration.
 
-## Codex sees instructions from the parent repository
+## Copilot sees instructions from the parent repository
 
 The root `AGENTS.md` provides safety defaults and the exercise-level `AGENTS.md` adds the local workflow. When running an exercise copied into its own repository, only its local instructions apply.
 

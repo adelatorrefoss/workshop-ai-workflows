@@ -30,7 +30,7 @@ The issue files are an immutable queue. Completion state belongs in `.dark-facto
 
 ## Run
 
-Launch `codex` from the root of the copied repository and paste `prompts/dark-factory.md`. Do not coach the factory between issues. It must stop on its own after the queue is empty, ten issues have been attempted, or a documented stop condition occurs.
+Launch `copilot` from the root of the copied repository and paste `prompts/dark-factory.md`. Do not coach the factory between issues. It must stop on its own after the queue is empty, ten issues have been attempted, or a documented stop condition occurs.
 
 Useful commands while observing the run from another terminal are:
 

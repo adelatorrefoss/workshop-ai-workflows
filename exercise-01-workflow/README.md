@@ -12,11 +12,11 @@ Run `make validate`. Create two branches from the same starter commit so Parts A
 
 ## Part A — Ad-hoc
 
-On the first branch, launch `codex` and ask: `Add a health check endpoint to this application.` Record files changed, checks added, and commands run.
+On the first branch, launch `copilot` and ask: `Add a health check endpoint to this application.` Record files changed, checks added, and commands run.
 
 ## Part B — Structured
 
-On the second branch, launch `codex` and paste `prompts/structured.md`. Approve the plan when Codex pauses.
+On the second branch, launch `copilot` and paste `prompts/structured.md`. Approve the plan when Copilot pauses.
 
 ## Success and reflection
 
