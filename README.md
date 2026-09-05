@@ -2,7 +2,7 @@
 
 This repository contains the practical work for **Module 7 — Workflows** from **Codesai Training: Advanced AI-Assisted Development**.
 
-The module explores how to move from an ad-hoc AI coding interaction to a repeatable, bounded autonomous loop. Across eight hands-on Codex exercises, learners progressively combine repository research, explicit planning, implementation rules, executable feedback, local repair loops, GitHub Issues, pull requests, CI, and autonomous local issue delivery.
+The module explores how to move from an ad-hoc AI coding interaction to a repeatable, bounded autonomous loop. Across eight hands-on Copilot exercises, learners progressively combine repository research, explicit planning, implementation rules, executable feedback, local repair loops, GitHub Issues, pull requests, CI, and autonomous local issue delivery.
 
 All exercises use the same technology and business context as the Codesai `ContextManagement` example: an **ASP.NET Core application targeting .NET 10** where learners submit interest registrations containing a name, email, and course. The API persists registrations to `interests.txt` and is paired with a small HTML/JavaScript form.
 
