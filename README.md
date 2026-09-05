@@ -14,7 +14,9 @@ Each exercise is self-contained. Enter its directory and follow its `README.md` 
 
 ```bash
 cd exercise-01-workflow
-codex
+cat README.md
+cat TASK-FOR-STUDENT.md
+copilot
 ```
 
 Exercises 1–5 run locally with the .NET 10 SDK and Make. Exercises 6–7 additionally require Git, GitHub CLI (`gh`), a GitHub account, and a remote repository. Exercise 8 requires local Git but deliberately uses no GitHub integration or remote.
